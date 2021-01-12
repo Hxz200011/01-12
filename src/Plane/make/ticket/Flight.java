@@ -8,8 +8,8 @@ public class Flight {
     private String departureAirport;//飞机出发点
     private String destinationAirPort;//飞机到达的目的地
     private String departureTime;//飞机的飞行时长
-    private String seatNO;
-    private String totalseatsnumber;
+    private String seatNO;//座位号
+    private String totalseatsnumber;//总座位数
 
     public String getSeatNO() {
         return seatNO;

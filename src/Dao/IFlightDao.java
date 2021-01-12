@@ -1,4 +1,4 @@
-package Bean;
+package Dao;
 
 import Plane.make.ticket.Flight;
 
@@ -9,7 +9,7 @@ public interface IFlightDao {
     Set <Flight> getAllFlights();
     Flight getFlightByDepartureTime(String departureTime);
     Flight getFlightByDepartureAirPort(String DepartureAirPort);
-    Flight getFlightByDestinationAirPorte(String DestinationAirPorte);
+    Flight getFlightByDestinationAirPort(String DestinationAirPort);
     void updateFlight(Flight flight);
 
 
