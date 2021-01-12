@@ -1,11 +1,31 @@
 package Plane.make.ticket;
 
+import java.util.SplittableRandom;
+
 public class Flight {
     private String id;
     private String planeType;//飞机型号
     private String departureAirport;//飞机出发点
     private String destinationAirPort;//飞机到达的目的地
     private String departureTime;//飞机的飞行时长
+    private String seatNO;
+    private String totalseatsnumber;
+
+    public String getSeatNO() {
+        return seatNO;
+    }
+
+    public void setSeatNO(String seatNO) {
+        this.seatNO = seatNO;
+    }
+
+    public String getTotalseatsnumber() {
+        return totalseatsnumber;
+    }
+
+    public void setTotalseatsnumber(String totalseatsnumber) {
+        this.totalseatsnumber = totalseatsnumber;
+    }
 
     public String getId() {
         return id;
