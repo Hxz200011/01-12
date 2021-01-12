@@ -1,6 +1,8 @@
 package Plane.make.ticket;
 
-public class Order {
+import java.util.Set;
+
+public class Order{
     private String id;
     private String jpjg;//机票价格
     private float ryf;//燃油费
@@ -9,7 +11,7 @@ public class Order {
     private float yhj;//优惠券
     private float hszj; //含税总价
     private float airportTax;//
-
+    private Set<Customer> customerSet;
     public String getId() {
         return id;
     }

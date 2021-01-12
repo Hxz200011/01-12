@@ -3,6 +3,7 @@ package Plane.make.ticket;
 import java.util.Date;
 
 public class Passenger {
+    private String id;
     private String name;
     private String phone;
     private String cardID;

@@ -1,34 +1,41 @@
 package Plane.make.ticket;
 
+import sun.dc.pr.PRError;
+
 import java.util.SplittableRandom;
 
 public class Flight {
     private String id;
+    private String flightid;//航班号
     private String planeType;//飞机型号
     private String departureAirport;//飞机出发点
     private String destinationAirPort;//飞机到达的目的地
-    private String departureTime;//飞机的飞行时长
-    private String seatNO;//座位号
-    private String totalseatsnumber;//总座位数
+    private String departureTime;//飞机的飞行时间
+    private int currentseatsnumber;//总座位数
 
-    public String getSeatNO() {
-        return seatNO;
-    }
+    public Flight(String id, int flightid, String currentseatsnuber,String planeType,
+                  String departureAirport, String departureTime, String destinationAirPort) {
 
-    public void setSeatNO(String seatNO) {
-        this.seatNO = seatNO;
-    }
-
-    public String getTotalseatsnumber() {
-        return totalseatsnumber;
-    }
-
-    public void setTotalseatsnumber(String totalseatsnumber) {
-        this.totalseatsnumber = totalseatsnumber;
     }
 
     public String getId() {
         return id;
+    }
+
+    public String getFlightid() {
+        return flightid;
+    }
+
+    public void setFlightid(String flightid) {
+        this.flightid = flightid;
+    }
+
+    public int getCurrentseatsnumber() {
+        return currentseatsnumber;
+    }
+
+    public void setCurrentseatsnumber(int currentseatsnumber) {
+        this.currentseatsnumber = currentseatsnumber;
     }
 
     public void setId(String id) {
